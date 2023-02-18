@@ -1,0 +1,245 @@
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat-Bold";
+  }
+
+.logo{
+    border-radius: 50%;
+}
+
+/* Navigation bar section  */
+
+#navigation {
+    background-color: #0000FF;
+    text-align: left;
+    padding: 3% 3% 0% 8%;
+  }
+  
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 0 4.5rem;
+  }
+  
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+    color: rgb(247, 245, 249);
+  }
+  
+  /* Slider image section */
+  
+  #sliderimage {
+    background-color: white;
+    text-align: left;
+    padding: 3% 3% 8% 8%;
+  }
+
+  .title {
+    font-family: "Montserrat-bold";
+    font-size: 4.0rem;
+    font-weight: bold;
+    color: #0000FF
+
+  }
+
+  .title-image {
+   width: 90%;
+  }
+
+  .titlesub{
+    font-family: "Montserrat-bold";
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+
+   /* What we do section */
+
+   #Whatwedo {
+    background-color: #0000FF;
+    text-align: center;
+    padding: 3% 3% 8% 8%;
+  }
+
+  .whatwedotitle{
+    font-family: "Montserrat-bold";
+    text-align: center;
+    font-size: 3.0rem;
+    color: white;
+
+   }
+
+   .icon {
+    color: orange;
+    margin-bottom: 1rem;
+  }
+  
+  .whatwebox{
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 2.5%;
+    color: white;
+  }
+
+   /* Portfolio section */
+
+   #portfolio{
+    background-color: #1505ea;
+    text-align: center;
+    padding: 3% 3% 8% 8%;
+
+   }
+
+  .boxsize{
+    margin-bottom: 20px;
+  }
+
+  .cardtitle{
+    font-family: "Montserrat-Bold";
+    text-align: center;
+  }
+
+  .cardtext{
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 2.5%;
+  }
+
+
+   /* How to join section */
+
+   #howtojoin{
+    background-color: white;
+    text-align: center;
+    padding: 3% 3% 8% 8%;
+
+   }
+
+   .howtojointitle{
+    font-family: "Montserrat-bold";
+    text-align: center;
+    font-size: 3.0rem;
+    color: blue;
+   }
+
+   .howtojoin{
+    font-family: "Montserrat";
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+   /* footer section */
+
+   #footer{
+    background-color: blue;
+    text-align: left;
+    padding: 3% 3% 1% 8%;
+
+   }
+
+   .footer{
+    font-family: "Montserrat";
+    color:white;
+    font-size: 1rem;
+   }
+
+.footerlink{
+    font-family: "Montserrat";
+    color:white;
+    font-size:1rem;
+    text-decoration: none;
+}
+
+   .footerlogo{
+    text-align: center;
+    color: white;
+   }
+
+   .copyright{
+    text-align: center;
+    color: white;
+    font-size: 0.5rem;
+   }
+   .footerlegal{
+    font-family: "Montserrat";
+    font-size: 0.7rem;
+    text-align: left;
+   }
+
+   /* -- Vission and Mission section on aboutus.html */
+
+   #visionmission{
+    background-color: whitesmoke;
+    text-align: left;
+    padding: 3% 3% 1% 8%;
+   }
+
+   .visionmissiontext{
+    font-family: "Montserrat-bold";
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  .visionmissionhead{
+    font-family: "Montserrat-bold";
+    text-align: center;
+    font-size: 4rem;
+    color: #0000FF;
+  }
+
+   /* -- Core Values section on aboutus.html */
+   #corevalues{
+    background-color: white;
+    text-align: center;
+    padding: 3% 3% 1% 8%;
+   }
+
+   .corevaluestitle{
+    font-family: "Montserrat-bold";
+    text-align: center;
+    font-size: 3.0rem;
+    color: blue;
+
+   }
+
+
+   /*  ---Form section  */
+
+   .formnotedetails{
+    font-family: "Montserrat-bold";
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 1.5;
+   }
+
+   #formnote{
+    background-color: white;
+    text-align: left;
+    padding: 3% 3% 1% 8%;
+   }
+   #formdetails{
+    background-color: whitesmoke;
+    text-align: left;
+    padding: 3% 3% 5% 8%;
+   }
