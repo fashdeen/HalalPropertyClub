@@ -3,12 +3,12 @@
 
 module.exports = {
     //url: 'https://zippyworld.net/zippy_world_live_api/v1/api/confirm_promo_code',
-    //key: '6128892',
-    // smtp_host : 'mail.fashcodeconsult.com',
-    // smtp_port : '465',
-    // sender_email : 'mentor@fashcodeconsult.com',
-    // smtp_user : 'mentor@fashcodeconsult.com',
-    // smtp_password : 'Fashcode!234'
+    //key: '2xxxx',
+    // smtp_host : 'mail..com',
+    // smtp_port : '222',
+    // sender_email : 'mentor@com',
+    // smtp_user : 'mento@sdfdd.c',
+    // smtp_password : 'vvvv'
 
     smtp_host : process.env.smtp_host,
     smtp_port : process.env.smtp_port,
