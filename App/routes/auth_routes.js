@@ -35,4 +35,5 @@ module.exports = function(app){
     // app.get("/api/get_articles", [ auth.verifyToken], controller.get_articles);
     // app.post("/api/create_article",[auth.verifyToken],controller.create_articles);
     // app.post("/api/create_user",[auth.verifyToken],controller.create_user);
+    // just adding
 };
