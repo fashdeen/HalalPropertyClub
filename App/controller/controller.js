@@ -60,12 +60,16 @@ exports.create_interest=(req, res) =>{
             res.status(422).send(v.errors);
         }
         else{
+            const regeaddress ="fashcodemail@gmail.com";
             const values = [firstname,surname,econtact,whatsappno,gender,occupation,address,country];
             conn.query("Insert into interestdetails (firstname, surname, email,whatsappno,gender,occupation,address,country) values(?)",[values], function(err, datafileds){
                 if(!err){
-                    external.email_sender(econtact,'Expression of Interest', 
+                   external.email_sender(econtact,'Expression of Interest', 
                     "<h4> Dear "+  firstname + 
                     ",<p>We acknowledge the receipt of your express of interest to join Halal Property Club - HPC. <br> We are going to review your application and reach out to you via email and or whatsapps to discuss the next step toward getting you on board as a registered member. <p> Once again we thank you for your interest.</h4> <p> <strong>Regards, <p> HPC <br> Management Team</strong>");
+                    external.email_sender(regeaddress, 'new interets',
+                    firstname + "," + surname + "," + econtact + "," + whatsappno + "," + gender + "," + occupation + "," + address + "," + country
+                    )
                     res.status(200).json({
                     status_code: "0", message: "successful",
                   }); 

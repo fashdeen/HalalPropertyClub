@@ -24,9 +24,9 @@ $(document).ready(function(){
                 $.ajax({ 
                   url:"http://localhost:3000/api/create_interest",
                     //url:"http://" + process.env.Location_Address + ":3000/api/create_user",
-                   // url:"http://" + process.env.Location_Address + ":" + process.env.Port_Address + "/api/create_interest",
-                    method:"post",
-                    headers: {"x-api-key": "231413"},
+                   //url:'http://' + process.env.Location_Address + ':' + process.env.Port_Address + '/api/create_interest',
+                   method:"post",
+                   headers: {"x-api-key": "231413"},
                     data:{firstname : firstname, surname : surname , econtact : econtact, whatsappno : whatsappno , gender : gender , occupation : occupation, address : address , country : country},
                     success:function(response){  
                         setTimeout(function(){
