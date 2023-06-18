@@ -9,6 +9,7 @@
 //npm install mysql
 //npm install nodemailer
 //npm install axios
+//npm i aws-sdk
 
 
 
@@ -40,7 +41,7 @@ app.use(express.static("public"));
 
 // set up a simple rount for testing
 
-app.get("/", (req, res) =>{
+app.get("/api", (req, res) =>{
     res.json({Message: "Welcome to our API Application."});
 });
 

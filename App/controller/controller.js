@@ -60,6 +60,55 @@ exports.create_interest=(req, res) =>{
             res.status(422).send(v.errors);
         }
         else{
+            const values = [firstname,surname,econtact,whatsappno,gender,occupation,address,country];
+            conn.query("Insert into interestdetails (firstname, surname, email,whatsappno,gender,occupation,address,country) values(?)",[values], function(err, datafileds){
+                if(!err){
+                    res.status(200).json({
+                    status_code: "0", message: "successful",
+                  }); 
+                  
+                }else
+                {
+                    res.send(err);
+                }
+                 } );
+            }
+        });
+    }
+
+    /*
+
+exports.create_interest=(req, res) =>{
+    
+    let firstname = req.body.firstname;
+    let surname = req.body.surname;
+    let econtact = req.body.econtact;
+    let whatsappno = req.body.whatsappno;
+    let gender = req.body.gender;
+    let occupation= req.body.occupation;
+    let address = req.body.address;
+    let country = req.body.country;
+    
+
+    // validate the entry
+
+    const v = new Validator(req.body,{
+         firstname: 'required',
+         surname: 'required',
+         econtact: 'required|email',
+         whatsappno: 'required',
+         gender: 'required',
+         occupation: 'required',
+         address: 'required',
+         country: 'required',
+         
+    });
+     
+    v.check().then((matched)=>{
+        if (!matched){
+            res.status(422).send(v.errors);
+        }
+        else{
             const regeaddress ="fashcodemail@gmail.com";
             const values = [firstname,surname,econtact,whatsappno,gender,occupation,address,country];
             conn.query("Insert into interestdetails (firstname, surname, email,whatsappno,gender,occupation,address,country) values(?)",[values], function(err, datafileds){
@@ -73,6 +122,7 @@ exports.create_interest=(req, res) =>{
                     res.status(200).json({
                     status_code: "0", message: "successful",
                   }); 
+                  
                 }else
                 {
                     res.send(err);
@@ -81,6 +131,21 @@ exports.create_interest=(req, res) =>{
             }
         });
     }
+
+
+    */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     // API to get all the details stored in the interestdetails table
