@@ -23,6 +23,18 @@ dotenv.config();
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const app = express();
+const https = require('https');
+const fs = require('fs');
+
+const key = fs.readFileSync('private.key');
+const cert = fs.readFileSync('certificate.crt');
+
+
+const cred ={
+        key,
+        cert
+}
+
 
 var corsOptions = {
     origin:"*"
@@ -57,6 +69,13 @@ require('./App/routes/auth_routes')(app);
         console.log("Server Stated on " + process.env.Port_Address)  ;
         });
 
+// set up https server
+//
 
+const httpsServer = https.createServer(cred, app);
+
+httpsServer.listen(process.env.Port_Https_Address, function (){
+        console.log("HttpSertver Started on " +process.env.Port_Https_Address);
+});
 
 
